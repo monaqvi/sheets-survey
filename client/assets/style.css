@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(237, 231, 246);
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+legend {
+  font-size: 1.25em;
+}
+
+header {
+  background-color: rgb(103, 58, 183);
+  height: 16em;
+}
+
+main {
+  margin-top: -3.25em;
+  margin: -3.25em auto 3.25em auto;
+  max-width: 64em;
+  text-align: left;
+} main > div {
+  background-color: white;
+  border-top: 1em rgb(179, 136, 255) solid;
+  box-shadow: 0 .125em .25em 0 rgba(0,0,0,0.37);
+  padding: 0 2em;
+  margin: 0 1em;
+}
+
+input,
+label,
+.pure-form label {
+  display: inline;
+}
+
+textarea {
+  resize: none;
+}
+
+footer {
+  color: rgba(0,0,0,0.54);
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.alert {
+  color: rgb(219, 68, 55);
+}
+
+.stand_out {
+  color: rgb(45, 73, 230);
+}
+
+.emphasize {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.tabordion .question {
+  background: #F0F0F0;
+  border: 1px solid #fff;
+  padding: 1em .5em;
+  position: relative;
+}
+
+.tabordion article {
+  display: none;
+  padding: .5em 2em;
+} .tabordion article > div {
+  margin: .5em 0 0 0;
+}
+
+.tabordion input:checked ~ article {
+  display: block;
+}
+
+@media screen and (min-width: 24em) {
+  body {
+    font-size: 16px;
+  }
+}
