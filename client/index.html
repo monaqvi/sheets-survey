@@ -75,7 +75,7 @@
               <span class="stand_out">
                 anonymously
               </span>
-              with someone who:<span class="alert">*</span>
+              with someone who (select all that apply):<span class="alert">*</span>
             </legend>
             <div class="pure-g">
               <div class="pure-u-1 question">
@@ -103,8 +103,8 @@
                     <div class="pure-u-md-2-5">
                       <select class="pure-u-1">
                         <option value="select" selected disabled>Please select</option>
-                        <option value="Y">Yes</option>
-                        <option value="N">No</option>
+                        <option value="Y">Yes, this has to be anonymous</option>
+                        <option value="N">No, I'm OK showing my info</option>
                       </select>
                     </div>
                   </div>
@@ -152,8 +152,8 @@
                     <div class="pure-u-md-2-5">
                       <select class="pure-u-1">
                         <option value="select" selected disabled>Please select</option>
-                        <option value="Y">Yes</option>
-                        <option value="N">No</option>
+                        <option value="Y">Yes, this should be anonymous</option>
+                        <option value="N">No, I'm OK showing my info</option>
                       </select>
                     </div>
                   </div>
@@ -201,8 +201,8 @@
                       <div class="pure-u-md-2-5">
                         <select class="pure-u-1">
                           <option value="select" selected disabled>Please select</option>
-                          <option value="Y">Yes</option>
-                          <option value="N">No</option>
+                          <option value="Y">Yes, this should be anonymous</option>
+                          <option value="N">No, I'm OK showing my info</option>
                         </select>
                       </div>
                     </div>
@@ -250,8 +250,8 @@
                       <div class="pure-u-md-2-5">
                         <select class="pure-u-1">
                           <option value="select" selected disabled>Please select</option>
-                          <option value="Y">Yes</option>
-                          <option value="N">No</option>
+                          <option value="Y">Yes, this should be anonymous</option>
+                          <option value="N">No, I'm OK showing my info</option>
                         </select>
                       </div>
                     </div>
@@ -299,8 +299,8 @@
                       <div class="pure-u-md-2-5">
                         <select class="pure-u-1">
                           <option value="select" selected disabled>Please select</option>
-                          <option value="Y">Yes</option>
-                          <option value="N">No</option>
+                          <option value="Y">Yes, this should be anonymous</option>
+                          <option value="N">No, I'm OK showing my info</option>
                         </select>
                       </div>
                     </div>
@@ -348,8 +348,8 @@
                       <div class="pure-u-md-2-5">
                         <select class="pure-u-1">
                           <option value="select" selected disabled>Please select</option>
-                          <option value="Y">Yes</option>
-                          <option value="N">No</option>
+                          <option value="Y">Yes, this should be anonymous</option>
+                          <option value="N">No, I'm OK showing my info</option>
                         </select>
                       </div>
                     </div>
@@ -400,8 +400,8 @@
                       <div class="pure-u-md-2-5">
                         <select class="pure-u-1">
                           <option value="select" selected disabled>Please select</option>
-                          <option value="Y">Yes</option>
-                          <option value="N">No</option>
+                          <option value="Y">Yes, this should be anonymous</option>
+                          <option value="N">No, I'm OK showing my info</option>
                         </select>
                       </div>
                     </div>
@@ -411,14 +411,6 @@
                       </div>
                       <div class="pure-u-md-2-5">
                         <input type="number" class="pure-u-1" name="price">
-                      </div>
-                    </div>
-                    <div class="pure-u-1">
-                      <div class="pure-u-md-2-5">
-                        Do you have a job in mind?
-                      </div>
-                      <div class="pure-u-md-2-5">
-                        <input type="text" class="pure-u-1" name="in_mind">
                       </div>
                     </div>
                   </article>
@@ -436,18 +428,52 @@
             <legend>
               Would you want to be a paid anonymous advisor on such a service?<span class="alert">*</span>
             </legend>
-            <div>
-              <select class="pure-u-1-2">
+            <div class="pure-u-1-2">
+              <select class="pure-u-1">
                 <option value="select" selected disabled>Please select</option>
-                <option value="Y">Yes</option>
-                <option value="N">No</option>
+                <option value="Y">Yes, I want to be an advisor</option>
+                <option value="N">No, I'm not interested</option>
               </select>
             </div>
           </fieldset>
 
           <fieldset>
             <legend>
-              Do you want us to email you with more information?
+              What would be a 'fair' hourly rate?<span class="alert">*</span>
+            </legend>
+            <div class="pure-u-1-2">
+              <input type="number" class="pure-u-1" name="price" placeholder="$ per hour">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              What is your current occupation?<span class="alert">*</span>
+            </legend>
+            <div class="pure-u-1-2">
+              <input type="text" class="pure-u-1" name="price" placeholder="e.g. Software Engineer, Law Student, Strategy Consultant">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              What is your role?<span class="alert">*</span>
+            </legend>
+            <div class="pure-u-1-2">
+              <select class="pure-u-1">
+                <option value="select" selected disabled>Please select</option>
+                <option value="entry">Entry-level</option>
+                <option value="manager">Manager</option>
+                <option value="director">Director</option>
+                <option value="owner">Owner</option>
+                <option value="other">Other (N/A)</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              Do you want us to email you with more information about this service?
             </legend>
             <div class="pure-g">
               <input type="email" class="pure-input-1-2" placeholder="Email address">
