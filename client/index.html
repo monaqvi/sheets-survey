@@ -67,9 +67,9 @@
       <div class="content">
         <h1>Expert Network End-user Survey</h1>
         <h3 class="alert">* Required</h3>
-        <form class="pure-form tabordion" id="survey">
+        <form class="pure-form" id="survey">
 
-          <fieldset required>
+          <fieldset class="tabordion" required>
             <legend>
               Would you pay to speak
               <span class="stand_out">
@@ -411,56 +411,46 @@
             <legend>
               Would you want to be a paid anonymous advisor on such a service?
             </legend>
-            <div class="pure-u-1-2">
-              <select class="pure-u-1">
-                <option value="select" selected disabled>Please select</option>
-                <option value="Y">Yes, I want to be an advisor</option>
-                <option value="N">No, I'm not interested</option>
-              </select>
-            </div>
+            <select class="pure-u-1-2">
+              <option value="select" selected disabled>Please select</option>
+              <option value="Y">Yes, I want to be an advisor</option>
+              <option value="N">No, I'm not interested</option>
+            </select>
           </fieldset>
 
           <fieldset required>
             <legend>
               What would be a 'fair' hourly rate?
             </legend>
-            <div class="pure-u-1-2">
-              <input type="number" min="0" class="pure-u-1" name="price" placeholder="$ per hour">
-            </div>
+            <input type="number" min="0" class="pure-u-1-2" name="price" placeholder="$ per hour">
           </fieldset>
 
           <fieldset required>
             <legend>
               What is your current occupation?
             </legend>
-            <div class="pure-u-1-2">
-              <input type="text" class="pure-u-1" name="price" placeholder="e.g. Software Engineer, Law Student, Strategy Consultant">
-            </div>
+            <input type="text" class="pure-u-1-2" name="price" placeholder="e.g. Software Engineer, Law Student, Strategy Consultant">
           </fieldset>
 
           <fieldset required>
             <legend>
               What is your role?
             </legend>
-            <div class="pure-u-1-2">
-              <select class="pure-u-1">
-                <option value="select" selected disabled>Please select</option>
-                <option value="entry">Entry-level</option>
-                <option value="manager">Manager</option>
-                <option value="director">Director</option>
-                <option value="owner">Owner</option>
-                <option value="other">Other (N/A)</option>
-              </select>
-            </div>
+            <select class="pure-u-1-2">
+              <option value="select" selected disabled>Please select</option>
+              <option value="entry">Entry-level</option>
+              <option value="manager">Manager</option>
+              <option value="director">Director</option>
+              <option value="owner">Owner</option>
+              <option value="other">Other (N/A)</option>
+            </select>
           </fieldset>
 
           <fieldset>
             <legend>
               Do you want us to email you with more information about this service?
             </legend>
-            <div class="pure-g">
-              <input type="email" class="pure-input-1-2" placeholder="Email address">
-            </div>
+            <input type="email" class="pure-input-1-2" placeholder="Email address">
           </fieldset>
 
           <a id="submit" class="pure-button pure-button-primary pure-button-disabled" href="#">Submit</a>
