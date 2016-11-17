@@ -61,13 +61,12 @@ footer {
 }
 
 .tabordion .question {
-  background: #F0F0F0;
-  border: 1px solid #fff;
   padding: 1em .5em;
   position: relative;
 }
 
 .tabordion article {
+  background: #F0F0F0;
   display: none;
   padding: .5em 2em;
 } .tabordion article > div {
