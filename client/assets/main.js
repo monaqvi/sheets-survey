@@ -1,3 +1,5 @@
-var saveData = function() {
-  console.log('hi');
-}
+$(function() {
+  $('#submit').click(function() {
+    console.log('validate and save!');
+  })
+});
