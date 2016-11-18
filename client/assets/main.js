@@ -1,4 +1,23 @@
 $(function() {
+  // Handle tabordion separately from rest of form
+  var tabordion = $('form > .tabordion input[type = checkbox]');
+
+  var never = tabordion.filter('#never'),
+      others = tabordion.not('#never');
+
+  // If never checked, disable all other checkboxes
+  never.click(function() {
+    others
+      .prop('disabled', this.checked)
+      .prop('checked', false);
+  });
+
+  // If other checked, disable never
+  others.click(function() {
+    never
+      .prop('disabled', this.checked)
+      .prop('checked', false);
+  });
 
   $('#submit').click(function() {
     var invalid = validateForm();
@@ -16,15 +35,6 @@ $(function() {
     var invalid = validateNode(required);
 
   // Now validate tabordion answers
-
-    // If never checked, disable all other checkboxes
-    var tabordion = $('form > .tabordion input[type = checkbox]');
-
-    tabordion.filter('#never').click(function() {
-      tabordion.not('#never')
-        .prop('disabled', this.checked)
-        .prop('checked', false);
-    });
 
     // Make sure at least one checkbox is selected
     var activeTabordion = tabordion.filter(':checked');
