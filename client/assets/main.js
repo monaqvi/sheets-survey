@@ -24,6 +24,9 @@ $(function() {
 
     $('.invalid').removeClass('invalid');
     $(invalid).parent().addClass('invalid');
+
+    $('#invalid').removeAttr('id');
+    $(invalid[0]).attr('id', 'invalid');
   });
 
   function validateForm() {
