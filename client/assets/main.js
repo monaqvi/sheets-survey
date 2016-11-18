@@ -29,8 +29,10 @@ $(function() {
 
     if (invalid.length !== 0) {
       $(invalid).parent().addClass('invalid');
-      $(invalid[0]).attr('id', 'invalid');
+      $(invalid[0]).parent().attr('id', 'invalid');
     }
+
+    // window.location.href = "/thankyou";
   });
 
   function validateForm() {
@@ -55,24 +57,35 @@ $(function() {
 
     function validateNode(node) {
       var dropdown = 'select',
-          input = 'textarea, input';
+          text = 'textarea, input[type = text]';
+          number = 'input[type = number]';
+
 
       // Validate required dropdowns
       var invalidDropdowns = node.children(dropdown).filter(invalidDropdown);
 
-      // Validate required inputs
-      var invalidInputs = node.children(input).filter(invalidInput);
+      // Validate required text inputs
+      var invalidTexts = node.children(text).filter(invalidText);
+
+      // Validate required number inputs
+      var invalidNumbers = node.children(number).filter(invalidNumber);
 
       return invalidDropdowns.toArray()
-              .concat(invalidInputs.toArray());
+              .concat(invalidTexts.toArray())
+              .concat(invalidNumbers.toArray());
     }
 
     function invalidDropdown(i, e) {
       return e.value === 'select';
     }
 
-    function invalidInput(i, e) {
+    function invalidText(i, e) {
       return e.value === '';
+    }
+
+    function invalidNumber(i, e) {
+      var num = parseFloat(e.value);
+      return isNaN(num) || num < 0;
     }
   }
 });
