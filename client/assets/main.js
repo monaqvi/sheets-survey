@@ -16,7 +16,7 @@ $(function() {
   // If other checked, disable never
   others.click(function() {
     never
-      .prop('disabled', this.checked)
+      .prop('disabled', !!others.filter(':checked').length)
       .prop('checked', false);
   });
 
