@@ -1,6 +1,7 @@
 $(function() {
   // Handle tabordion separately from rest of form
   var tabordion = $('form > .tabordion input[type = checkbox]');
+  var nonTabordion = $('form > fieldset').not('.tabordion');
 
   var never = tabordion.filter('#never'),
       others = tabordion.not('#never');
@@ -19,23 +20,24 @@ $(function() {
       .prop('checked', false);
   });
 
+  // Validate on submission
   $('#submit').click(function() {
     var invalid = validateForm();
 
     $('.invalid').removeClass('invalid');
-    $(invalid).parent().addClass('invalid');
-
     $('#invalid').removeAttr('id');
-    $(invalid[0]).attr('id', 'invalid');
+
+    if (invalid.length !== 0) {
+      $(invalid).parent().addClass('invalid');
+      $(invalid[0]).attr('id', 'invalid');
+    }
   });
 
   function validateForm() {
-    var invalid = [];
-
   // First validate non-tabordion answers
-    var required = $('form > fieldset[required]');
+    var requiredNonTabordion = nonTabordion.filter('[required]');
 
-    var invalid = validateNode(required);
+    var invalidNonTabordion = validateNode(requiredNonTabordion);
 
   // Now validate tabordion answers
 
@@ -47,11 +49,9 @@ $(function() {
 
     var invalidTabordion = validateNode(requiredTabordion);
 
-    console.log($(invalid).parent());
-
     return (activeTabordion.length ? [] : tabordion.toArray())
-            .concat(invalid)
-            .concat(invalidTabordion);
+        .concat(invalidTabordion)
+        .concat(invalidNonTabordion);
 
     function validateNode(node) {
       var dropdown = 'select',
