@@ -71,6 +71,14 @@ footer {
   display: block;
 }
 
+.invalid:after {
+  content: 'Please answer this before submitting.';
+  display: block;
+  color: rgb(219, 68, 55);
+} .tabordion .invalid:after {
+  content: 'Please pick one answer.';
+}
+
 [required] > legend:after,
 [required] > span:after {
   content: '*';
