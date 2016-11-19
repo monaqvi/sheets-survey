@@ -63,13 +63,21 @@ $(function() {
       $(invalid[0]).parent().attr('id', 'invalid');
     } else {
     }
-    // window.location.href = "/thankyou";
       var save = {};
       $(allInputs).each(function() {
         var self = $(this);
         save[self.prop('id')] = self.prop('value');
       });
-      console.log(Object.keys(save));
+
+      $.ajax({
+        method: 'POST',
+        url: "/app/save",
+        data: save,
+        success: function(res) {
+          console.log(res);
+          window.location.href = '/thankyou/';
+        }
+      });
   });
 
   function validateForm() {
