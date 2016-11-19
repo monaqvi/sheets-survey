@@ -1,10 +1,12 @@
 $(function() {
   // Handle tabordion separately from rest of form
-  var tabordion = $('form > .tabordion input[type = checkbox]');
-  var nonTabordion = $('form > fieldset').not('.tabordion');
+  var tabordion = $('form > .tabordion input[type = checkbox]'),
+      nonTabordion = $('form > fieldset').not('.tabordion');
 
   var never = tabordion.filter('#never'),
       others = tabordion.not('#never');
+
+  var allInputs = 'input, select, textarea';
 
   // If never checked, disable all other checkboxes
   never.click(function() {
@@ -20,6 +22,34 @@ $(function() {
       .prop('checked', false);
   });
 
+  // Programatically add tabordion labels
+  (function() {
+    var labels = [
+      'communicate',
+      'anonymous',
+      'pay_up_to',
+      'in_mind'
+    ];
+
+    var labelsForOther = [
+      'detail',
+    ].concat(labels);
+
+    // Go through each checkbox
+    others.each(function() {
+      var group = $(this);
+      var id = group.prop('id');
+
+      group.siblings().children('fieldset').children(allInputs).each(function(i) {
+        if (id === 'other') {
+          $(this).attr('id', id + '__' + labelsForOther[i])
+        } else {
+          $(this).attr('id', id + '__' + labels[i])
+        }
+      });
+    });
+  })();
+
   // Validate on submission
   $('#submit').click(function() {
     var invalid = validateForm();
@@ -29,10 +59,17 @@ $(function() {
 
     if (invalid.length !== 0) {
       $(invalid).parent().addClass('invalid');
+      // Important to add to parent to not overwrite individual field ids
       $(invalid[0]).parent().attr('id', 'invalid');
+    } else {
     }
-
     // window.location.href = "/thankyou";
+      var save = {};
+      $(allInputs).each(function() {
+        var self = $(this);
+        save[self.prop('id')] = self.prop('value');
+      });
+      console.log(Object.keys(save));
   });
 
   function validateForm() {
