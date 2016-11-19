@@ -62,11 +62,15 @@ $(function() {
       // Important to add to parent to not overwrite individual field ids
       $(invalid[0]).parent().attr('id', 'invalid');
     } else {
-    }
       var save = {};
       $(allInputs).each(function() {
         var self = $(this);
-        save[self.prop('id')] = self.prop('value');
+        var label = self.prop('id');
+        if (self.prop('type') === 'checkbox') {
+          save[label] = Boolean(self.prop('checked')) ? 'Y' : 'N';
+        } else {
+          save[self.prop('id')] = self.prop('value');
+        }
       });
 
       $.ajax({
@@ -78,6 +82,7 @@ $(function() {
           window.location.href = '/thankyou/';
         }
       });
+    }
   });
 
   function validateForm() {
@@ -121,7 +126,7 @@ $(function() {
     }
 
     function invalidDropdown(i, e) {
-      return e.value === 'select';
+      return e.value === '';
     }
 
     function invalidText(i, e) {
