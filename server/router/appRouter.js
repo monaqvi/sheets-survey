@@ -1,14 +1,15 @@
 const express = require('express');
 const router = new express.Router();
 
+const saveToGoogle = require('./../google-sheets/');
+
 router.use((req, res, next) => {
   console.log('Time: ', Date.now());
   next();
 });
 
-router.post('/save', (req, res) => {
-  console.log(req.data);
-  res.send('hi');
+router.post('/save', (req, res) => {  
+  saveToGoogle(req.body, res);
 });
 
 module.exports = router;
