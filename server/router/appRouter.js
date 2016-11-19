@@ -3,13 +3,12 @@ const router = new express.Router();
 
 router.use((req, res, next) => {
   console.log('Time: ', Date.now());
-  console.log(req);
-  console.log(res);
   next();
 });
 
-router.get('/thankyou', (req, res) => {
-  res.sendFile(__dirname + "/../../client/thankyou.html");
+router.post('/save', (req, res) => {
+  console.log(req.data);
+  res.send('hi');
 });
 
 module.exports = router;

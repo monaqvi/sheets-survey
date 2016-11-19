@@ -1,9 +1,7 @@
-var appRouter = require('./appRouter');
+const appRouter = require('./appRouter');
 
-module.exports = function(app, express) {
-  var redirectHome = function(req, res) {
-    res.redirect('/');
-  }
+module.exports = (app, express) => {
+  const redirectHome = (req, res) => res.redirect('/');
 
   app.use(express.static(__dirname + '/../../client'));
 
