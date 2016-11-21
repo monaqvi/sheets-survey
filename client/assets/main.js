@@ -50,6 +50,13 @@ $(function() {
     });
   })();
 
+  // Make rate required if person wants to be an expert
+  $('#expert').change(function(e) {
+    var rate = $('#expert_hourly_rate').parent();
+    var bool = e.target.value === 'Y';
+    rate.attr('required', bool);;
+  });
+
   // Validate on submission
   $('#submit').click(function() {
     var invalid = validateForm();
