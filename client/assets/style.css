@@ -15,6 +15,8 @@ h3, h4, h5, h6 {
 
 legend {
   font-size: 1.25em;
+} legend h5 {
+  margin: 0em;
 }
 
 header {
