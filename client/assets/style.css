@@ -57,6 +57,10 @@ footer {
   color: rgb(45, 73, 230);
 }
 
+.bolded {
+  font-weight: bold;
+}
+
 .emphasize {
   text-decoration: underline;
   font-weight: bold;
