@@ -41,10 +41,12 @@ $(function() {
       var id = group.prop('id');
 
       group.siblings().children('fieldset').children(allInputs).each(function(i) {
+        var self = $(this);
+        self.addClass('tabordion_sub')
         if (id === 'other') {
-          $(this).attr('id', id + '__' + labelsForOther[i])
+          self.attr('id', id + '__' + labelsForOther[i])
         } else {
-          $(this).attr('id', id + '__' + labels[i])
+          self.attr('id', id + '__' + labels[i])
         }
       });
     });
@@ -70,6 +72,12 @@ $(function() {
       $(invalid[0]).parent().attr('id', 'invalid');
     } else {
       var save = {};
+
+      // Erase tabordion_sub data if never was subsequently clicked
+      if ($('#never').is(':checked')) {
+        $('.tabordion_sub').each(function() { $(this).prop('value', ''); })
+      }
+
       $(allInputs).each(function() {
         var self = $(this);
         var label = self.prop('id');
