@@ -70,54 +70,9 @@
 
           <fieldset class="tabordion" required>
             <legend>
-              Would you speak with someone outside of your personal network who <span class="stand_out">(select all that apply)</span>:
+              Would you speak with someone -- outside of your personal network -- who <span class="stand_out">(select all that apply)</span>:
             </legend>
             <div class="pure-g">
-              <div class="pure-u-1 checkbox">
-                <input type="checkbox" id="job_break" value="job_break">
-                <label for="job_break"> can <span class="emphasize">share insight and answer questions about a job / career</span> he / she has or had?</label>
-                <article>
-
-                  <fieldset required>
-                    <span class="pure-u-1 pure-u-sm-2-5">
-                      I would prefer we talk over:
-                    </span>
-                    <select class="pure-u-1 pure-u-sm-2-5">
-                      <option value="" selected disabled>Please select</option>
-                      <option value="phone">Phone</option>
-                      <option value="email">Email</option>
-                      <option value="video">Video chat</option>
-                      <option value="text">Text chat</option>
-                    </select>
-                  </fieldset>
-
-                  <fieldset required>
-                    <span class="pure-u-1 pure-u-sm-2-5">
-                      I would only do this anonymously:
-                    </span>
-                    <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, this has to be anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                    </select>
-                  </fieldset>
-
-                  <fieldset required>
-                    <span class="pure-u-1 pure-u-sm-2-5">
-                      I would pay up to $____:
-                    </span>
-                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                  </fieldset>
-
-                  <fieldset>
-                    <span class="pure-u-1 pure-u-sm-2-5">
-                      Do you have a job in mind?
-                    </span>
-                    <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
-                  </fieldset>
-
-                </article>
-              </div>
 
               <div class="pure-u-1 checkbox">
                 <input type="checkbox" id="resume_review" value="resume_review">
@@ -155,19 +110,12 @@
                     <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
                   </fieldset>
 
-                  <fieldset>
-                    <span class="pure-u-1 pure-u-sm-2-5">
-                      Do you have a job in mind?
-                    </span>
-                    <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
-                  </fieldset>
-
                 </article>
               </div>
 
                 <div class="pure-u-1 checkbox">
                   <input type="checkbox" id="mock_interview" value="mock_interview">
-                  <label for="mock_interview"> can <span class="emphasize">give a mock interview</span> for a job he / she has or has had in the past?</label>
+                  <label for="mock_interview"> can <span class="emphasize">prep you for an interview</span> for a job he / she has or has had in the past?</label>
                   <article>
 
                     <fieldset required>
@@ -199,13 +147,6 @@
                         I would pay up to $____:
                       </span>
                       <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
-
-                    <fieldset>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        Do you have a job in mind?
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
                     </fieldset>
 
                   </article>
@@ -213,7 +154,7 @@
 
                 <div class="pure-u-1 checkbox">
                   <input type="checkbox" id="job_negotiation" value="job_negotiation">
-                  <label for="job_negotiation"> can give information on <span class="emphasize">pay, hours, management, culture, etc. </span>for a job you have an offer to join?</label>
+                  <label for="job_negotiation"> can  <span class="emphasize">tell you about pay, hours, management, culture, etc.</span> for a job you have an offer to join?</label>
                   <article>
 
                     <fieldset required>
@@ -247,11 +188,43 @@
                       <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
                     </fieldset>
 
-                    <fieldset>
+                  </article>
+                </div>
+
+                <div class="pure-u-1 checkbox">
+                  <input type="checkbox" id="job_break" value="job_break">
+                  <label for="job_break"> can <span class="emphasize">give you specialized advice about a job / career</span> he / she has or had?</label>
+                  <article>
+
+                    <fieldset required>
                       <span class="pure-u-1 pure-u-sm-2-5">
-                        Do you have a job in mind?
+                        I would prefer we talk over:
                       </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
+                      <select class="pure-u-1 pure-u-sm-2-5">
+                        <option value="" selected disabled>Please select</option>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="video">Video chat</option>
+                        <option value="text">Text chat</option>
+                      </select>
+                    </fieldset>
+
+                    <fieldset required>
+                      <span class="pure-u-1 pure-u-sm-2-5">
+                        I would only do this anonymously:
+                      </span>
+                      <select class="pure-u-1 pure-u-sm-2-5">
+                          <option value="" selected disabled>Please select</option>
+                          <option value="Y">Yes, this has to be anonymous</option>
+                          <option value="N">No, I'm OK showing my info</option>
+                      </select>
+                    </fieldset>
+
+                    <fieldset required>
+                      <span class="pure-u-1 pure-u-sm-2-5">
+                        I would pay up to $____:
+                      </span>
+                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
                     </fieldset>
 
                   </article>
@@ -293,19 +266,12 @@
                       <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
                     </fieldset>
 
-                    <fieldset>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        Do you have a school in mind?
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
-                    </fieldset>
-
                   </article>
                 </div>
 
                 <div class="pure-u-1 checkbox">
                   <input type="checkbox" id="school_interview" value="school_interview">
-                  <label for="school_interview"> can give a <span class="emphasize">mock admissions interview</span> for a school he / she is attending or is an alumnus of?</label>
+                  <label for="school_interview"> can <span class="emphasize">prep you for an admissions interview</span> with a school he / she is attending or is an alumnus of?</label>
                   <article>
 
                     <fieldset required>
@@ -339,19 +305,12 @@
                       <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
                     </fieldset>
 
-                    <fieldset>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        Do you have a school in mind?
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
-                    </fieldset>
-
                   </article>
                 </div>
 
                 <div class="pure-u-1 checkbox">
                   <input type="checkbox" id="other" value="other">
-                  <label for="other"> can help you with <span class="emphasize">something else he / she has experience / expertise in</span>? (Please specify)</label>
+                  <label for="other">can <span class="emphasize">help you with something else</span> he / she has experience / expertise in? (Please specify)</label>
                   <article>
 
                     <fieldset required>
@@ -443,8 +402,7 @@
 
           <fieldset>
             <legend>
-              Do you want us to email you with updates about this service?
-              <h5>We will <span class="stand_out">never</span> share your personal information with <span class="stand_out">anyone</span>.</h5>
+              Do you want us to email you with updates about this service?<sup>1</sup>
             </legend>
             <input id="email" type="email" class="pure-u-1 pure-u-md-1-2" placeholder="Email address">
           </fieldset>
@@ -452,9 +410,12 @@
           <a id="submit" class="pure-button pure-button-primary" href="#invalid">Submit</a>
         </form>
         <footer class="pure-u-1">
-          Questions or Comments? Please email us at
-          <a href="mailto:moashared@gmail.com?Subject=Consumer%20End-user%20Validation%20Survey">
-            moashared@gmail.com</a>
+          <div>
+            Questions or Comments? Please email us at
+            <a href="mailto:moashared@gmail.com?Subject=Consumer%20End-user%20Validation%20Survey">
+              moashared@gmail.com</a>
+          </div>
+          <div><sup>1</sup>Your email will not be shared.</div>
         </footer>
       </div>
     </main>

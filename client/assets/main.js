@@ -28,7 +28,7 @@ $(function() {
       'communicate',
       'anonymous',
       'pay_up_to',
-      'in_mind'
+      // 'in_mind'
     ];
 
     var labelsForOther = [
