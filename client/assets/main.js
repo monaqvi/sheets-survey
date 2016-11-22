@@ -71,7 +71,7 @@ $(function() {
       // Important to add to parent to not overwrite individual field ids
       $(invalid[0]).parent().attr('id', 'invalid');
     } else {
-      var save = {};
+      var save = { source: window.location.pathname.slice(1), };
 
       // Erase tabordion_sub data if never was subsequently clicked
       // if ($('#never').is(':checked')) {
