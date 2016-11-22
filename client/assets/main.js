@@ -74,9 +74,9 @@ $(function() {
       var save = {};
 
       // Erase tabordion_sub data if never was subsequently clicked
-      if ($('#never').is(':checked')) {
-        $('.tabordion_sub').each(function() { $(this).prop('value', ''); })
-      }
+      // if ($('#never').is(':checked')) {
+      //   $('.tabordion_sub').each(function() { $(this).prop('value', ''); })
+      // }
 
       $(allInputs).each(function() {
         var self = $(this);
