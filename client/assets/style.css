@@ -5,6 +5,10 @@ body {
   text-align: center;
 }
 
+.pure-g [class *="pure-u"] {
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,8 +66,11 @@ footer {
 }
 
 .emphasize {
+  font-weight: 500;
+}
+
+.highlight {
   text-decoration: underline;
-  font-weight: bold;
 }
 
 .tabordion .checkbox {
