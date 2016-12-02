@@ -92,8 +92,8 @@ footer {
   content: 'Please answer this before submitting.';
   display: block;
   color: rgb(219, 68, 55);
-} .tabordion .invalid:after {
-  content: 'Please pick one answer.';
+} .tabordion div.invalid:after {
+  content: 'Please pick atleast one answer.';
 }
 
 [required] > legend:after,
