@@ -83,7 +83,7 @@
                     <span class="pure-u-1 pure-u-sm-2-5">
                       I'd prefer to talk over:
                     </span>
-                    <select class="pure-u-1 pure-u-sm-2-5">
+                    <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
                       <option value="" selected disabled>Please select</option>
                       <option value="phone">Phone</option>
                       <option value="email">Email</option>
@@ -96,7 +96,7 @@
                     <span class="pure-u-1 pure-u-sm-2-5">
                       I'd need my identity to be hidden:
                     </span>
-                    <select class="pure-u-1 pure-u-sm-2-5">
+                    <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
                       <option value="" selected disabled>Please select</option>
                       <option value="Y">Yes, I'd like to stay anonymous</option>
                       <option value="N">No, I'm OK showing my info</option>
@@ -107,251 +107,259 @@
                     <span class="pure-u-1 pure-u-sm-2-5">
                       I would pay up to $____:
                     </span>
-                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
+                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
                   </fieldset>
 
                 </article>
               </div>
 
-                <div class="pure-u-1 checkbox">
-                  <input type="checkbox" id="mock_interview" value="mock_interview">
-                  <label for="mock_interview"> can <span class="emphasize">prep you for an interview</span> for a <span class="highlight">job he / she currently has</span> or had in the past?</label>
-                  <article>
+              <div class="pure-u-1 checkbox">
+                <input type="checkbox" id="mock_interview" value="mock_interview">
+                <label for="mock_interview"> can <span class="emphasize">prep you for an interview</span> for a <span class="highlight">job he / she currently has</span> or had in the past?</label>
+                <article>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd prefer to talk over:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="video">Video chat</option>
-                        <option value="text">Text chat</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd prefer to talk over:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="phone">Phone</option>
+                      <option value="email">Email</option>
+                      <option value="video">Video chat</option>
+                      <option value="text">Text chat</option>
+                    </select>
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd need my identity to be hidden:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, I'd like to stay anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd need my identity to be hidden:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Y">Yes, I'd like to stay anonymous</option>
+                      <option value="N">No, I'm OK showing my info</option>
+                    </select>
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I would pay up to $____:
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I would pay up to $____:
+                    </span>
+                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
+                  </fieldset>
 
-                  </article>
-                </div>
+                </article>
+              </div>
 
-                <div class="pure-u-1 checkbox">
-                  <input type="checkbox" id="job_negotiation" value="job_negotiation">
-                  <label for="job_negotiation"> can  <span class="emphasize">tell you about pay, hours, management, culture, etc.</span> for a <span class="highlight">job you have an offer to join</span>?</label>
-                  <article>
+              <div class="pure-u-1 checkbox">
+                <input type="checkbox" id="job_negotiation" value="job_negotiation">
+                <label for="job_negotiation"> can  <span class="emphasize">tell you about pay, hours, management, culture, etc.</span> for a <span class="highlight">job you have an offer to join</span>?</label>
+                <article>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd prefer to talk over:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="video">Video chat</option>
-                        <option value="text">Text chat</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd prefer to talk over:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="phone">Phone</option>
+                      <option value="email">Email</option>
+                      <option value="video">Video chat</option>
+                      <option value="text">Text chat</option>
+                    </select>
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd need my identity to be hidden:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, I'd like to stay anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd need my identity to be hidden:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Y">Yes, I'd like to stay anonymous</option>
+                      <option value="N">No, I'm OK showing my info</option>
+                    </select>
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I would pay up to $____:
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I would pay up to $____:
+                    </span>
+                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
+                  </fieldset>
 
-                  </article>
-                </div>
+                </article>
+              </div>
 
-                <div class="pure-u-1 checkbox">
-                  <input type="checkbox" id="job_break" value="job_break">
-                  <label for="job_break"> can <span class="emphasize">give you specialized advice </span>about a <span class="highlight">job / career he / she currently has</span> or had in the past?</label>
-                  <article>
+              <div class="pure-u-1 checkbox">
+                <input type="checkbox" id="job_break" value="job_break">
+                <label for="job_break"> can <span class="emphasize">give you specialized advice </span>about a <span class="highlight">job / career he / she currently has</span> or had in the past?</label>
+                <article>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd prefer to talk over:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="video">Video chat</option>
-                        <option value="text">Text chat</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      Advice on what topic?
+                    </span>
+                    <input class="pure-u-1 pure-u-sm-2-5" type="text" name="in_mind">
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd need my identity to be hidden:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, I'd like to stay anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd prefer to talk over:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="phone">Phone</option>
+                      <option value="email">Email</option>
+                      <option value="video">Video chat</option>
+                      <option value="text">Text chat</option>
+                    </select>
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I would pay up to $____:
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd need my identity to be hidden:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Y">Yes, I'd like to stay anonymous</option>
+                      <option value="N">No, I'm OK showing my info</option>
+                    </select>
+                  </fieldset>
 
-                  </article>
-                </div>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I would pay up to $____:
+                    </span>
+                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
+                  </fieldset>
 
-                <div class="pure-u-1 checkbox">
-                  <input type="checkbox" id="school_app" value="school_app">
-                  <label for="school_app"> can <span class="emphasize">review and tailor your application</span> to a  <span class="highlight">school he / she is attending</span> or is an alumnus of?</label>
-                  <article>
-                    
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd prefer to talk over:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="video">Video chat</option>
-                        <option value="text">Text chat</option>
-                      </select>
-                    </fieldset>
+                </article>
+              </div>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd need my identity to be hidden:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, I'd like to stay anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                      </select>
-                    </fieldset>
+              <div class="pure-u-1 checkbox">
+                <input type="checkbox" id="school_app" value="school_app">
+                <label for="school_app"> can <span class="emphasize">review and tailor your application</span> to a  <span class="highlight">school he / she is attending</span> or is an alumnus of?</label>
+                <article>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I would pay up to $____:
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
+                <fieldset required>
+                  <span class="pure-u-1 pure-u-sm-2-5">
+                    I'd prefer to talk over:
+                  </span>
+                  <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
+                    <option value="" selected disabled>Please select</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="video">Video chat</option>
+                    <option value="text">Text chat</option>
+                  </select>
+                </fieldset>
 
-                  </article>
-                </div>
+                <fieldset required>
+                  <span class="pure-u-1 pure-u-sm-2-5">
+                    I'd need my identity to be hidden:
+                  </span>
+                  <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
+                    <option value="" selected disabled>Please select</option>
+                    <option value="Y">Yes, I'd like to stay anonymous</option>
+                    <option value="N">No, I'm OK showing my info</option>
+                  </select>
+                </fieldset>
 
-                <div class="pure-u-1 checkbox">
-                  <input type="checkbox" id="school_interview" value="school_interview">
-                  <label for="school_interview"> can <span class="emphasize">prep you for an admissions interview</span> with a <span class="highlight">school he / she is attending</span> or is an alumnus of?</label>
-                  <article>
+                <fieldset required>
+                  <span class="pure-u-1 pure-u-sm-2-5">
+                    I would pay up to $____:
+                  </span>
+                  <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
+                </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd prefer to talk over:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="video">Video chat</option>
-                        <option value="text">Text chat</option>
-                      </select>
-                    </fieldset>
+                </article>
+              </div>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd need my identity to be hidden:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, I'd like to stay anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                      </select>
-                    </fieldset>
+              <div class="pure-u-1 checkbox">
+                <input type="checkbox" id="school_interview" value="school_interview">
+                <label for="school_interview"> can <span class="emphasize">prep you for an admissions interview</span> with a <span class="highlight">school he / she is attending</span> or is an alumnus of?</label>
+                <article>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I would pay up to $____:
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd prefer to talk over:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="phone">Phone</option>
+                      <option value="email">Email</option>
+                      <option value="video">Video chat</option>
+                      <option value="text">Text chat</option>
+                    </select>
+                  </fieldset>
 
-                  </article>
-                </div>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd need my identity to be hidden:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Y">Yes, I'd like to stay anonymous</option>
+                      <option value="N">No, I'm OK showing my info</option>
+                    </select>
+                  </fieldset>
 
-                <div class="pure-u-1 checkbox">
-                  <input type="checkbox" id="other" value="other">
-                  <label for="other">can <span class="emphasize">help you with something else</span> he / she <span class="highlight">has experience / expertise in</span>? (Please specify)</label>
-                  <article>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I would pay up to $____:
+                    </span>
+                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1">
-                        Please describe as much as possible:
-                      </span>
-                      <textarea class="pure-u-1" rows="7"></textarea>
-                    </fieldset>
+                </article>
+              </div>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd prefer to talk over:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="video">Video chat</option>
-                        <option value="text">Text chat</option>
-                      </select>
-                    </fieldset>
+              <div class="pure-u-1 checkbox">
+                <input type="checkbox" id="other" value="other">
+                <label for="other">can <span class="emphasize">help you with something else</span> he / she <span class="highlight">has experience / expertise in</span>? (Please specify)</label>
+                <article>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I'd need my identity to be hidden:
-                      </span>
-                      <select class="pure-u-1 pure-u-sm-2-5">
-                        <option value="" selected disabled>Please select</option>
-                        <option value="Y">Yes, I'd like to stay anonymous</option>
-                        <option value="N">No, I'm OK showing my info</option>
-                      </select>
-                    </fieldset>
+                  <fieldset required>
+                    <span class="pure-u-1">
+                      Please describe as much as possible:
+                    </span>
+                    <textarea class="pure-u-1" rows="3" name="in_mind"></textarea>
+                  </fieldset>
 
-                    <fieldset required>
-                      <span class="pure-u-1 pure-u-sm-2-5">
-                        I would pay up to $____:
-                      </span>
-                      <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="price">
-                    </fieldset>
-                  </article>
-                </div>
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd prefer to talk over:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="communicate">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="phone">Phone</option>
+                      <option value="email">Email</option>
+                      <option value="video">Video chat</option>
+                      <option value="text">Text chat</option>
+                    </select>
+                  </fieldset>
+
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I'd need my identity to be hidden:
+                    </span>
+                    <select class="pure-u-1 pure-u-sm-2-5" name="anonymous">
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Y">Yes, I'd like to stay anonymous</option>
+                      <option value="N">No, I'm OK showing my info</option>
+                    </select>
+                  </fieldset>
+
+                  <fieldset required>
+                    <span class="pure-u-1 pure-u-sm-2-5">
+                      I would pay up to $____:
+                    </span>
+                    <input class="pure-u-1 pure-u-sm-2-5" type="number" min="0" name="pay_up_to">
+                  </fieldset>
+
+                </article>
+              </div>
 
                 <div class="pure-u-1 checkbox">
                   <input type="checkbox" id="never" value="never">
@@ -423,14 +431,6 @@
     </main>
   </body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./assets/main.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-87807619-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <script type="text/javascript" src="/assets/js/googleAnalytics.js"></script>
 </html>
