@@ -24,17 +24,6 @@ $(function() {
 
   // Programatically add tabordion labels
   (function() {
-    var labels = [
-      'communicate',
-      'anonymous',
-      'pay_up_to',
-      // 'in_mind'
-    ];
-
-    var labelsForOther = [
-      'detail',
-    ].concat(labels);
-
     // Go through each checkbox
     others.each(function() {
       var group = $(this);
@@ -42,12 +31,8 @@ $(function() {
 
       group.siblings().children('fieldset').children(allInputs).each(function(i) {
         var self = $(this);
-        self.addClass('tabordion_sub')
-        if (id === 'other') {
-          self.attr('id', id + '__' + labelsForOther[i])
-        } else {
-          self.attr('id', id + '__' + labels[i])
-        }
+        self.addClass('tabordion_sub');
+        self.attr('id', id + '__' + self.prop('name'));
       });
     });
   })();
