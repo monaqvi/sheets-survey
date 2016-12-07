@@ -37,11 +37,16 @@ $(function() {
     });
   })();
 
-  // Make rate required if person wants to be an expert
   $('#expert').change(function(e) {
     var rate = $('#expert_hourly_rate').parent();
     var bool = e.target.value === 'Y';
-    rate.attr('required', bool);;
+
+    // Make rate required if person wants to be an expert
+    rate.attr('required', bool);
+
+    // Ask why not expert
+    var action = bool ? 'addClass' : 'removeClass';
+    $('#expert_reason_no').parent()[action]('hidden');
   });
 
   // Validate on submission
